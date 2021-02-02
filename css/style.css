@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    border: 0;
+    width: 100%;
+}
+
+.fondo {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    max-width: 80em;
+    height: 43em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    width: 12em;
+    position: fixed;
+    margin: 2em;
+}
+
+
+/*PANTALLA-DOS*/
+
+.texto {
+    position: relative;
+    width: 22em;
+    font-size: 1.5em;
+}
+
+.texto-p {
+    position: absolute;
+    left: 20em;
+    top: 7em;
+    text-align: center;
+    z-index: 1;
+    width: 14em;
+}
+
+.avatares {
+    display: flex;
+    width: 45em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    position: relative;
+}
+
+.avatar {
+    width: 5em;
+    cursor: pointer;
+}
+
+.avatar-yoshi {
+    width: 6.5em;
+    margin: 28.7em 10em 0em 7em;
+}
+
+.avatar-peach {
+    width: 4.5em;
+    margin: 26.2em 0em 0em 10em;
+}
+
+.avatar-mario {
+    width: 5.5em;
+    margin: 34.3em 5em 0em 0em;
+}
+
+.avatar-luigi {
+    margin: 23.5em 2em 0em 4em;
+}
+
+
+/*PANTALLA-TRES*/
+
+#pantallaTres {
+    width: 31em;
+    height: 11em;
+    margin-left: 39em;
+    margin-right: 0;
+    position: relative;
+    top: 9em;
+}
+
+.vs {
+    text-align: center;
+    font-size: 3em;
+    color: red;
+    margin: 1em;
+}
+
+.title-playerDos {}
+
+.playerUno {}
+
+.playerDos {}
+
+.player {
+    width: 33em;
+    height: 13em;
+    background: red;
+}
+
+.players {
+    position: absolute;
+    display: flex;
+}
+
+#progreso {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.progress {
+    width: 15em;
+}
+
+.title-playerDos {
+    margin-left: 11.1em;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 1285px) {
+    .body {
+        margin-top: 10em;
+        background: radial-gradient(circle, rgba(76, 171, 255, 1) 57%, rgba(184, 218, 248, 0.6362920168067228) 100%);
+    }
+}
