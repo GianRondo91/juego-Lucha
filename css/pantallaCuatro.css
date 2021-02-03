@@ -1,0 +1,53 @@
+#pantallaCuatro {
+    position: relative;
+}
+
+#players-final {
+    width: 50em;
+    height: 20em;
+    position: absolute;
+    display: flex;
+    margin-left: 18em;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 7em;
+}
+
+.players-final {
+    width: 14em;
+    height: 16em;
+    margin: 4em;
+}
+
+.player-perdedor {
+    background: chartreuse;
+}
+
+.player-ganador {
+    background: chocolate;
+}
+
+.volver {
+    width: 8em;
+    margin-left: 57em;
+    margin-top: 35em;
+    position: absolute;
+}
+
+.star {
+    width: 46em;
+    position: absolute;
+    top: 8em;
+    left: 24em;
+}
+
+.star-playerUno,
+.star-playerDos {
+    width: 10em;
+    transform: rotate( 20deg);
+    padding: 2em;
+}
+
+.star-playerUno {
+    margin-right: 12em;
+}

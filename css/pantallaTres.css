@@ -1,0 +1,94 @@
+/*PANTALLA-TRES*/
+
+#pantallaTres {
+    width: 31em;
+    height: 11em;
+    margin-left: 39em;
+    margin-right: 0;
+    position: relative;
+    top: 9em;
+}
+
+.vs {
+    text-align: center;
+    font-size: 3em;
+    color: red;
+    margin: 1em;
+}
+
+
+/* .title-playerDos {}
+
+.playerUno {}
+
+.playerDos {} */
+
+.player {
+    width: 33em;
+    height: 13em;
+    background: red;
+}
+
+.players {
+    /* position: absolute; */
+    position: relative;
+    display: flex;
+}
+
+#progreso {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.progress {
+    width: 15em;
+}
+
+.title-playerDos {
+    margin-left: 11.1em;
+}
+
+
+/*EXPLOSION*/
+
+.explosion {
+    width: 20em;
+    position: absolute;
+}
+
+.explosion-player {
+    /*  */
+}
+
+.explosion-playerUno {
+    margin-top: -14em;
+    margin-left: -5em;
+}
+
+.explosion-playerDos {
+    margin-top: -14em;
+    margin-left: 17.5em;
+}
+
+
+/*START*/
+
+.start {
+    width: 10em;
+    position: absolute;
+    margin-top: 25em;
+    margin-left: 17em;
+}
+
+
+/*INFO-LUCHA*/
+
+.info-lucha {
+    position: absolute;
+    width: 13em;
+    font-size: -36em;
+    font-size: 2em;
+    margin-left: -18em;
+    margin-top: 2em;
+    text-align: center;
+}

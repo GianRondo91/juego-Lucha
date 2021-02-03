@@ -1,23 +1,23 @@
-let cambiaPantalla = (faseAhora, faseFutura) => {
-    let pantallaActual = document.getElementById(pantallaDos);
+// let cambiaPantalla = (faseAhora, faseFutura) => {
+//     let pantallaActual = document.getElementById(pantallaDos);
 
-    let pantallaDestino = document.getElementById(pantallaUno);
+//     let pantallaDestino = document.getElementById(pantallaUno);
 
-    //aqui procedemos con el cambio
+//     //aqui procedemos con el cambio
 
-    pantallaActual.style.display = "none";
-    pantallaDestino.style.display = "block";
-};
+//     pantallaActual.style.display = "none";
+//     pantallaDestino.style.display = "block";
+// };
 
-//Cambiar de pantalla porque ya tenemos a los personajes elegidos
+// //Cambiar de pantalla porque ya tenemos a los personajes elegidos
 
-resolveIn(1000).then(delay => {
+// resolveIn(1000).then(delay => {
 
-    cambiaPantalla("screen1", "screen2");
+//     cambiaPantalla("screen1", "screen2");
 
-});
+// });
 
-//funcion de delay...
+// //funcion de delay...
 
-const resolveIn = delay =>
-    new Promise(res => setTimeout(() => res(delay), delay));
+// const resolveIn = delay =>
+//     new Promise(res => setTimeout(() => res(delay), delay));
