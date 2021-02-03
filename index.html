@@ -23,7 +23,7 @@
             <img src="img/logo.png" alt="" class="logo">
         </div>
         <!--PANTALLA UNO INICIO-->
-        <div id="pantallaUno" style="display: none;">
+        <div id="pantallaUno" style="display: block;">
             <div class="cargando">
                 <div class="bienvenido d-flex justify-content-center">
                     Welcome
@@ -47,10 +47,10 @@
                 <p class="texto-p">Para empzar a jugar, tienes que elegir a tus 2 personajes que lucharan entre si y luego presionar <b>GO</b></p>
             </div>
             <div class="avatares">
-                <div id="avatar"><img src="img/Mario-Bros.png" alt="" class="avatar avatar-mario"></div>
-                <div id="avatar"><img src="img/Luigi.png" alt="" class="avatar avatar-luigi"></div>
-                <div id="avatar"><img src="img/Yoshi..png" alt="" class="avatar avatar-yoshi"></div>
-                <div id="avatar"><img src="img/Peach.png" alt="" class="avatar avatar-peach"></div>
+                <div id="mario"><img src="img/Mario-Bros.png" alt="" class="avatar avatar-mario"></div>
+                <div id="luigi"><img src="img/Luigi.png" alt="" class="avatar avatar-luigi"></div>
+                <div id="yoshi"><img src="img/Yoshi..png" alt="" class="avatar avatar-yoshi"></div>
+                <div id="peach"><img src="img/Peach.png" alt="" class="avatar avatar-peach"></div>
 
             </div>
             <div class="boton boton-empezar">
@@ -90,7 +90,7 @@
             </div>
         </div>
         <!--PANTALLA CUATRO GANADOR / VOLVER A INICIAR-->
-        <div id="pantallaCuatro" style="display: block;">
+        <div id="pantallaCuatro" style="display: none;">
             <div id="players-final">
                 <div class="players-final player-perdedor"></div>
                 <div class="players-final player-ganador"></div>
@@ -109,6 +109,10 @@
 
     <!--SCRIPTS-->
     <script src="js/main.js"></script>
+    <script src="js/pantallaUno.js"></script>
+    <script src="js/pantallaDos.js"></script>
+    <script src="js/pantallaTres.js"></script>
+    <script src="js/pantallaCuatro.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
