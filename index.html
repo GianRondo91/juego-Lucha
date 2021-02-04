@@ -23,7 +23,7 @@
             <img src="img/logo.png" alt="" class="logo">
         </div>
         <!--PANTALLA UNO INICIO-->
-        <div id="pantallaUno" style="display: block;">
+        <div id="pantallaUno">
             <div class="cargando">
                 <div class="bienvenido d-flex justify-content-center">
                     Welcome
@@ -39,12 +39,15 @@
                         <span class="sr-only"></span>
                     </div>
                 </div>
+                <div id="entrar">
+                    <button type="button" class="btn btn-warning">ENTRAR</button>
+                </div>
             </div>
         </div>
         <!--PANTALLA DOS SELECCION-->
-        <div id="pantallaDos" style="display: none;">
+        <div id="pantallaDos">
             <div class="texto">
-                <p class="texto-p">Para empzar a jugar, tienes que elegir a tus 2 personajes que lucharan entre si y luego presionar <b>GO</b></p>
+                <p class="texto-p">Para empzar a jugar, tienes que elegir a tus 2 personajes que lucharan entre si y luego presionar <button id="go" type="button" class="btn btn-warning">GO</button></p>
             </div>
             <div class="avatares">
                 <div id="mario"><img src="img/Mario-Bros.png" alt="" class="avatar avatar-mario"></div>
@@ -54,11 +57,10 @@
 
             </div>
             <div class="boton boton-empezar">
-
             </div>
         </div>
         <!--PANTALLA TRES LUCHA-->
-        <div id="pantallaTres" style="display: none;">
+        <div id="pantallaTres">
             <div class="info-lucha">
                 <p>Para que empiece la lucha solo presiona <em>START</em> y la lucha se iniciara.</p>
             </div>
@@ -85,18 +87,18 @@
                 <div class="explosion-player explosion-playerUno"><img src="img/explosion.gif" alt="" class="explosion"></div>
                 <div class="explosion-player explosion-playerDos"><img src="img/explosion.gif" alt="" class="explosion"></div>
             </div>
-            <div class="start">
+            <div id="start">
                 <button type="button" class="btn btn-success">START</button>
             </div>
         </div>
         <!--PANTALLA CUATRO GANADOR / VOLVER A INICIAR-->
-        <div id="pantallaCuatro" style="display: none;">
+        <div id="pantallaCuatro">
             <div id="players-final">
                 <div class="players-final player-perdedor"></div>
                 <div class="players-final player-ganador"></div>
             </div>
 
-            <div class="volver">
+            <div id="volver">
                 <button type="button" class="btn btn-warning">BACK</button>
             </div>
 
@@ -106,7 +108,6 @@
             </div>
         </div>
     </div>
-
     <!--SCRIPTS-->
     <script src="js/main.js"></script>
     <script src="js/pantallaUno.js"></script>

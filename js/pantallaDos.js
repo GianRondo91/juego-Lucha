@@ -30,3 +30,16 @@ let seleccion = (personajes) => {
     //Introducimos personaje en PLAYER  
 
 }
+
+/*PANTALLA */
+go.addEventListener('click', () => {
+    if (pantalla2.style.display === "block") {
+        pantalla2.style.display = "none";
+        pantalla3.style.display = "block";
+        pantalla1.style.display = "none";
+        pantalla4.style.display = "none";
+        go.removeAttribute('disabled')
+    } else {
+        pantalla2.style.display = "none";
+    };
+});

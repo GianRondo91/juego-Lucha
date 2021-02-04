@@ -1,34 +1,49 @@
-let cambiaPantalla = (pantallaUno, pantallaDos, pantallaTres, pantallaCuatro) => {
-    let pantalla1 = document.getElementById(pantallaUno);
-    let pantalla2 = document.getElementById(pantallaDos);
-    let pantalla3 = document.getElementById(pantallaTres);
-    let pantalla4 = document.getElementById(pantallaCuatro);
+// window.addEventListener('load', init, false);
 
-    //aqui procedemos con el cambio
+let entrar = document.getElementById('entrar');
+let start = document.getElementById('start');
+let volver = document.getElementById('volver');
+let go = document.getElementById('go');
 
-    pantalla1.style.display = "none";
-    pantalla2.style.display = "block";
-    pantalla3.style.display = "none";
-    pantalla4.style.display = "none";
-};
+let pantalla1 = document.getElementById('pantallaUno');
+let pantalla2 = document.getElementById('pantallaDos');
+let pantalla3 = document.getElementById('pantallaTres');
+let pantalla4 = document.getElementById('pantallaCuatro');
+// console.log('donde');
+// let inciar = () => {
+//     pantalla1.style.visibility = "block";
 
+//     entrar.addEventListener('click', function(e) {
+//         if (pantalla1.style.visibility === "block") {
 
-//funcion de delay...
+//             pantalla1.style.visibility = "none";
+//             pantalla2.style.visibility = "block";
+//             pantalla3.style.visibility = "none";
+//             pantalla4.style.visibility = "none";
+//         } else {
+//             pantalla1.style.visibility = "none";
+//         };
+//     });
+//     false;
+//     console.log('donde');
+// };
+// console.log('donde');
 
-const resolveIn = delay =>
-    new Promise(res => setTimeout(() => res(delay), delay));
+let inciar = () => {};
+/*INICIAMOS LA PANTALLA */
+pantalla1.style.display = "block";
+pantalla2.style.display = "none";
+pantalla3.style.display = "none";
+pantalla4.style.display = "none";
 
-//Cambiar de pantalla porque ya tenemos a los personajes elegidos
-
-resolveIn(4000).then(delay => {
-    cambiaPantalla("pantallaUno", "PantallaDos");
-
+/*EVENTO PANTALLA */
+entrar.addEventListener('click', () => {
+    if (pantalla1.style.display === "block") {
+        pantalla1.style.display = "none";
+        pantalla2.style.display = "block";
+        pantalla3.style.display = "none";
+        pantalla4.style.display = "none";
+    } else {
+        pantalla1.style.display = "none";
+    };
 });
-
-
-
-// var delayInMilliseconds = 1000; //1 second
-
-// setTimeout(function() {
-//   //your code to be executed after 1 second
-// }, delayInMilliseconds);

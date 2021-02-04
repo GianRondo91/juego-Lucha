@@ -9,11 +9,15 @@ class Personaje {
     };
 
     ataque(enemigo) {
-        enemigo.vida -= (this.fuerzaAtaque - enemigo.fuerzaDefenza) * (this.suerte - this.handicap);
+        enemigo.vida -=
+            (this.fuerzaAtaque - enemigo.fuerzaDefenza) *
+            (this.suerte - this.handicap);
     }
     ataqueEspecial(enemigo) {
-        enemigo.vida -= (this.fuerzaAtaque * 0.5 + this.fuerzaDefenza) - enemigo.fuerzaDefenza;
-
+        enemigo.vida -=
+            (this.fuerzaAtaque *
+                0.5 + this.fuerzaDefenza) -
+            enemigo.fuerzaDefenza;
     }
 
 };
@@ -29,3 +33,27 @@ let yoshi = new Personaje('yoshi', 200, 15, 40, 4);
 let player1 = null;
 let player2 = null;
 let jugadores = [];
+
+/**PANTALLAS*/
+
+// let cambiaPantalla = (
+//     pantallaUno,
+//     pantallaDos,
+//     pantallaTres,
+//     pantallaCuatro
+// ) => {
+//     let pantalla1 = document.getElementById(pantallaUno);
+//     let pantalla2 = document.getElementById(pantallaDos);
+//     let pantalla3 = document.getElementById(pantallaTres);
+//     let pantalla4 = document.getElementById(pantallaCuatro);
+
+//     //aqui procedemos con el cambio
+
+//     pantalla1.style.display = "none";
+//     pantalla2.style.display = "none";
+//     pantalla3.style.display = "none";
+//     pantalla4.style.display = "none";
+
+// };
+
+/*CAMBIAR PANTALLA UNO A LA DOS */

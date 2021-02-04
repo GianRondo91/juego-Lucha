@@ -1,5 +1,12 @@
+#pantallaUno {
+    position: relative;
+}
+
 .cargando {
-    padding-top: 16em;
+    padding-top: 12em;
+    margin-left: 34em;
+    position: absolute;
+    width: 19em;
 }
 
 .spinner-border {
@@ -8,4 +15,10 @@
 
 .bienvenido {
     font-size: 3em;
+}
+
+#entrar {
+    width: 8em;
+    margin-left: 6em;
+    margin-top: 2em;
 }
