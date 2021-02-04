@@ -1,3 +1,4 @@
+/*CREO MI CLASE */
 class Personaje {
     constructor(nombre, vida, fuerzaAtaque, fuerzaDefenza, suerte) {
         this.nombre = nombre;
@@ -19,7 +20,6 @@ class Personaje {
                 0.5 + this.fuerzaDefenza) -
             enemigo.fuerzaDefenza;
     }
-
 };
 
 //INSTANCIA
@@ -29,31 +29,30 @@ let luigi = new Personaje('luigi', 200, 45, 20, 2);
 let peach = new Personaje('peach', 200, 20, 50, 3);
 let yoshi = new Personaje('yoshi', 200, 15, 40, 4);
 
+
+
 /*JUGADORES*/
 let player1 = null;
 let player2 = null;
 let jugadores = [];
 
-/**PANTALLAS*/
+/*PANTALLAS */
 
-// let cambiaPantalla = (
-//     pantallaUno,
-//     pantallaDos,
-//     pantallaTres,
-//     pantallaCuatro
-// ) => {
-//     let pantalla1 = document.getElementById(pantallaUno);
-//     let pantalla2 = document.getElementById(pantallaDos);
-//     let pantalla3 = document.getElementById(pantallaTres);
-//     let pantalla4 = document.getElementById(pantallaCuatro);
+let pantallas = [
+    document.getElementById('pantallaUno'),
+    document.getElementById('pantallaDos'),
+    document.getElementById('pantallaTres'),
+    document.getElementById('pantallaCuatro')
+];
 
-//     //aqui procedemos con el cambio
+let pantallaActual = 0;
 
-//     pantalla1.style.display = "none";
-//     pantalla2.style.display = "none";
-//     pantalla3.style.display = "none";
-//     pantalla4.style.display = "none";
+let cambiarPantalla = (pantalla) => {
+    pantallas[pantallaActual].style.display = "none";
+    pantallas[pantalla].style.display = "block";
 
-// };
+    //Me acuerdo en que pantalla estoy
+    pantallaActual = pantalla;
+};
 
-/*CAMBIAR PANTALLA UNO A LA DOS */
+cambiarPantalla(1);

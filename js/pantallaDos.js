@@ -2,44 +2,60 @@
 
 let marioDiv = document.getElementById('mario');
 let luigiDiv = document.getElementById('luigi');
-let peachDiv = document.getElementById('yoshi');
-let yoshiDiv = document.getElementById('peach');
+let peachDiv = document.getElementById('peach');
+let yoshiDiv = document.getElementById('yoshi');
 
 /*EVENTO CLICK */
 marioDiv.addEventListener('click', () => {
-    console.log('Sleccionaste a ', marioDiv);
+    seleccion(mario);
 });
 
 luigiDiv.addEventListener('click', () => {
-    console.log('Sleccionaste a ', luigiDiv);
+    seleccion(luigi);
 });
 peachDiv.addEventListener('click', () => {
-    console.log('Sleccionaste a ', peachDiv);
+    seleccion(peach);
 });
 yoshiDiv.addEventListener('click', () => {
-    console.log('seleccionaste a ', yoshiDiv);
+    seleccion(yoshi)
 });
 
-jugadores.push(mario, luigi, peach, yoshi);
 
-console.log(jugadores);
+//Desababilito boton
+let go = document.getElementById('go');
 
 /*SELECCIONAR PERSONAJES */
-let seleccion = (personajes) => {
+let seleccion = (personaje) => {
+    let opcion = null;
+
+    if (player1 != null && player2 != null) {
+        return;
+    }
+
+    if (player1) {
+        if (player1 === personaje) {
+            alert("¡¡No puedes elegir el mismo personaje!!");
+            return;
+        }
+
+        player2 = personaje;
+        go.disabled = false;
+        opcion = "dos";
+    } else {
+        player1 = personaje;
+        opcion = "uno";
+    };
 
     //Introducimos personaje en PLAYER  
+    let personajeDiv = document.getElementById(personaje.nombre);
 
+    //Le damos un color de seleccion a cada jugador
+    personajeDiv.className += " select-player-" + opcion;
 }
+
 
 /*PANTALLA */
 go.addEventListener('click', () => {
-    if (pantalla2.style.display === "block") {
-        pantalla2.style.display = "none";
-        pantalla3.style.display = "block";
-        pantalla1.style.display = "none";
-        pantalla4.style.display = "none";
-        go.removeAttribute('disabled')
-    } else {
-        pantalla2.style.display = "none";
-    };
+
+    cambiarPantalla(2);
 });

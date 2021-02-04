@@ -47,3 +47,14 @@
 .avatar-luigi {
     margin: 23.5em 2em 0em 6em;
 }
+
+
+/**/
+
+.select-player-uno {
+    border: 0.1em solid red;
+}
+
+.select-player-dos {
+    border: 0.1em solid blue;
+}

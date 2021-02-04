@@ -23,7 +23,7 @@
             <img src="img/logo.png" alt="" class="logo">
         </div>
         <!--PANTALLA UNO INICIO-->
-        <div id="pantallaUno">
+        <div id="pantallaUno" style="display: block;">
             <div class="cargando">
                 <div class="bienvenido d-flex justify-content-center">
                     Welcome
@@ -45,9 +45,9 @@
             </div>
         </div>
         <!--PANTALLA DOS SELECCION-->
-        <div id="pantallaDos">
+        <div id="pantallaDos" style="display: none;">
             <div class="texto">
-                <p class="texto-p">Para empzar a jugar, tienes que elegir a tus 2 personajes que lucharan entre si y luego presionar <button id="go" type="button" class="btn btn-warning">GO</button></p>
+                <p class="texto-p">Para empzar a jugar, tienes que elegir a tus 2 personajes que lucharan entre si y luego presionar <button id="go" type="button" class="btn btn-warning" disabled>GO</button></p>
             </div>
             <div class="avatares">
                 <div id="mario"><img src="img/Mario-Bros.png" alt="" class="avatar avatar-mario"></div>
@@ -60,7 +60,7 @@
             </div>
         </div>
         <!--PANTALLA TRES LUCHA-->
-        <div id="pantallaTres">
+        <div id="pantallaTres" style="display: none;">
             <div class="info-lucha">
                 <p>Para que empiece la lucha solo presiona <em>START</em> y la lucha se iniciara.</p>
             </div>
@@ -92,7 +92,7 @@
             </div>
         </div>
         <!--PANTALLA CUATRO GANADOR / VOLVER A INICIAR-->
-        <div id="pantallaCuatro">
+        <div id="pantallaCuatro" style="display: none;">
             <div id="players-final">
                 <div class="players-final player-perdedor"></div>
                 <div class="players-final player-ganador"></div>
