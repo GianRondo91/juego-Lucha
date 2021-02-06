@@ -3,3 +3,7 @@ let volver = document.getElementById('volver');
 volver.addEventListener('click', () => {
     cambiarPantalla(0);
 });
+
+/*MUESTO POR PANTALLA A LOS 2 PERSONAJES SELECCIONADOS */
+
+/*PONGO ESTRELLA AL GANADOR */

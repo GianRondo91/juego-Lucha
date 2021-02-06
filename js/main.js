@@ -3,31 +3,42 @@ class Personaje {
     constructor(nombre, vida, fuerzaAtaque, fuerzaDefenza, suerte) {
         this.nombre = nombre;
         this.vida = vida;
+        this.vidaInicial = vida;
         this.fuerzaAtaque = fuerzaAtaque;
         this.fuerzaDefenza = fuerzaDefenza;
         this.suerte = suerte;
-        this.handicap = suerte - Math.floor(Math.random() * 5);
+        this.handicap = Math.floor(Math.random() * (suerte - 1));
     };
 
-    ataque(enemigo) {
-        enemigo.vida -=
-            (this.fuerzaAtaque - enemigo.fuerzaDefenza) *
-            (this.suerte - this.handicap);
+    resetLife() {
+        this.vida = this.vidaInicial;
     }
-    ataqueEspecial(enemigo) {
-        enemigo.vida -=
-            (this.fuerzaAtaque *
-                0.5 + this.fuerzaDefenza) -
-            enemigo.fuerzaDefenza;
+
+    attack(enemigo) {
+        //calculo el daño
+        //Math.max -> controlo que la vida y el daño no vayan por debajo de 0
+        let damage = Math.max(
+            (this.fuerzaAtaque - enemigo.fuerzaDefenza) *
+            (this.suerte - this.handicap),
+            0);
+        enemigo.vida = Math.max(enemigo.vida - damage, 0);
+    };
+
+    specialAttack(enemigo) {
+        let damage = Math.max(
+            ((this.fuerzaAtaque + this.fuerzaAtaque * 0.5) - enemigo.fuerzaDefenza) *
+            (this.suerte - this.handicap),
+            0);
+        enemigo.vida = Math.max(enemigo.vida - damage, 0);
     }
 };
 
 //INSTANCIA
 
-let mario = new Personaje('mario', 200, 50, 30, 7);
-let luigi = new Personaje('luigi', 200, 45, 20, 2);
-let peach = new Personaje('peach', 200, 20, 50, 3);
-let yoshi = new Personaje('yoshi', 200, 15, 40, 4);
+let mario = new Personaje('mario', 400, 35, 15, 7);
+let luigi = new Personaje('luigi', 400, 32, 12, 2);
+let peach = new Personaje('peach', 400, 28, 16, 3);
+let yoshi = new Personaje('yoshi', 400, 38, 18, 4);
 
 
 

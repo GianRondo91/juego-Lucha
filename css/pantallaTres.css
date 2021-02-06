@@ -26,11 +26,10 @@
 .player {
     width: 33em;
     height: 13em;
-    background: red;
+    /* background: red; */
 }
 
 .players {
-    /* position: absolute; */
     position: relative;
     display: flex;
 }
@@ -49,6 +48,23 @@
 }
 
 
+/*Avatares*/
+
+.yoshiLucha {
+    width: 6.5em;
+}
+
+.peachLucha {
+    width: 4.5em;
+}
+
+.marioLucha {
+    width: 5.5em;
+}
+
+.luigiLucha {}
+
+
 /*EXPLOSION*/
 
 .explosion {
@@ -60,12 +76,12 @@
     /*  */
 }
 
-.explosion-playerUno {
+.explosion-player1 {
     margin-top: -14em;
     margin-left: -5em;
 }
 
-.explosion-playerDos {
+.explosion-player2 {
     margin-top: -14em;
     margin-left: 17.5em;
 }

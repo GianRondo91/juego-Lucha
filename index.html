@@ -52,7 +52,7 @@
             <div class="avatares">
                 <div id="mario"><img src="img/Mario-Bros.png" alt="" class="avatar avatar-mario"></div>
                 <div id="luigi"><img src="img/Luigi.png" alt="" class="avatar avatar-luigi"></div>
-                <div id="yoshi"><img src="img/Yoshi..png" alt="" class="avatar avatar-yoshi"></div>
+                <div id="yoshi"><img src="img/Yoshi.png" alt="" class="avatar avatar-yoshi"></div>
                 <div id="peach"><img src="img/Peach.png" alt="" class="avatar avatar-peach"></div>
 
             </div>
@@ -64,28 +64,33 @@
             <div class="info-lucha">
                 <p>Para que empiece la lucha solo presiona <em>START</em> y la lucha se iniciara.</p>
             </div>
+
             <div id="progreso">
+                <div id="startMessage"></div>
                 <div class="title-playerUno">
                     Player uno
                     <div class="progress">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div id="progress-player1" class="progress-bar bg-danger" role="progressbar"></div>
                     </div>
                 </div>
                 <div class="title-playerDos ">
                     Player dos
                     <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div id="progress-player2" class="progress-bar bg-warning" role="progressbar"></div>
                     </div>
                 </div>
             </div>
             <div class="players">
-                <div id="player1" class="player playerUno"></div>
+                <div id="player1" class="player playerUno">
+                    <img src="" alt="" class="avatar">
+                </div>
                 <p class="vs">VS</p>
-                <div id="player2" class="player playerDos"></div>
+                <div id="player2" class="player playerDos">
+                    <img src="" alt="" class="avatarLucha">
+                </div>
             </div>
-            <div class="bombita">
-                <div class="explosion-player explosion-playerUno"><img src="img/explosion.gif" alt="" class="explosion"></div>
-                <div class="explosion-player explosion-playerDos"><img src="img/explosion.gif" alt="" class="explosion"></div>
+            <div id="bombContainer">
+
             </div>
             <div id="start">
                 <button type="button" class="btn btn-success">START</button>
