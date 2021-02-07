@@ -15,6 +15,9 @@ let iniciarBatalla = () => {
 
     let startMessage = document.getElementById('startMessage');
 
+    startMessage.style.display = "block";
+    startMessage.innerHTML = "";
+
     let updateStateMessage = () => {
 
         if (battleState == 0) {
@@ -159,7 +162,7 @@ let attack = (player) => {
     progress.style.width = lifePerc + "%";
 
     //Mostrar bomba
-    showBomb(playerId);
+    showBomb(targetPlayerId);
 
     //Si se murio enemigo, finaliza partida
     if (target.vida == 0) {

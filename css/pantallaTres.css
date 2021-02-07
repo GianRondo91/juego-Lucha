@@ -76,12 +76,16 @@
 
 #player1.marioLucha .avatar {
     position: absolute;
-    top: -1em;
+    top: -3em;
     left: 2em;
     width: 16em;
 }
 
-#player2.marioLucha .avatar {}
+#player2.marioLucha .avatar {
+    position: absolute;
+    top: -2em;
+    width: 14em;
+}
 
 #player2.yoshiLucha .avatar {
     top: -5em;
@@ -96,7 +100,11 @@
     width: 16em;
 }
 
-#player1.luigiLucha .avatar {}
+#player1.luigiLucha .avatar {
+    top: -3em;
+    left: 2em;
+    position: absolute;
+}
 
 #player2.luigiLucha .avatar {
     top: -3.5em;
@@ -105,12 +113,14 @@
 
 #player1.peachLucha .avatar {
     left: -2em;
+    top: -4em;
     position: absolute;
 }
 
 #player2.peachLucha .avatar {
     position: absolute;
-    top: -5em;
+    top: -4em;
+    left: -3em;
 }
 
 

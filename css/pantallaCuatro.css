@@ -68,6 +68,12 @@
     width: 17em;
 }
 
+.peachWinner img {
+    position: absolute;
+    left: 4em;
+    top: -1em;
+}
+
 .peachLooser img,
 .peachWinner img {
     width: 13em;
