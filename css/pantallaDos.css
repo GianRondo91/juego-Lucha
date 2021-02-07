@@ -18,10 +18,8 @@
 .avatares {
     display: flex;
     width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -10em;
-    position: relative;
+    position: absolute;
+    top: 3em;
 }
 
 .avatar {
@@ -29,23 +27,31 @@
     cursor: pointer;
 }
 
-.avatar-yoshi {
-    width: 6.5em;
-    margin: 28.7em 10em 0em 10em;
-}
-
-.avatar-peach {
-    width: 4.5em;
-    margin: 26.2em 0em 0em 10em;
+.avatar-mario,
+.avatar-yoshi,
+.avatar-peach,
+.avatar-luigi {
+    position: absolute;
 }
 
 .avatar-mario {
-    width: 5.5em;
-    margin: 34.3em 5em 0em 5em;
+    top: 32em;
+    left: 5em;
+}
+
+.avatar-yoshi {
+    top: 27.8em;
+    left: 46em;
+}
+
+.avatar-peach {
+    left: 72em;
+    top: 22.5em;
 }
 
 .avatar-luigi {
-    margin: 23.5em 2em 0em 6em;
+    left: 24em;
+    top: 20.5em;
 }
 
 

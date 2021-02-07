@@ -18,25 +18,23 @@
         position: absolute;
     }
     .avatar-mario {
-        margin-top: 31.5em;
-        margin-left: 6em;
+        top: 32em;
     }
     .avatar-yoshi {
-        margin-top: 25.8em;
-        margin-left: 8.5em;
+        top: 27.8em;
+        left: 46em;
     }
     .avatar-peach {
-        margin-top: 23em;
-        margin-left: 10.5em;
+        top: 22em;
     }
     .avatar-luigi {
-        margin-top: 20.5em;
-        margin-left: 6em;
+        left: 24em;
+        top: 20.5em;
     }
     .texto-p {
-        top: 3em;
+        top: 0em;
         font-size: 1.1em;
-        left: 17em;
+        left: 19em;
         width: 16em;
     }
     #pantallaTres {

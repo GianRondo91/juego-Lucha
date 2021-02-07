@@ -55,7 +55,6 @@
 #player1 {
     left: 1em;
     top: -2em;
-    position: absolute;
 }
 
 #player2 {
@@ -73,20 +72,46 @@
 
 .peachLucha .avatar {
     width: 18em;
-    left: -3em;
-    position: absolute;
 }
 
 #player1.marioLucha .avatar {
-    top: 2em;
     position: absolute;
+    top: -1em;
+    left: 2em;
+    width: 16em;
 }
 
 #player2.marioLucha .avatar {}
 
-.marioLucha .avatar {}
+#player2.yoshiLucha .avatar {
+    top: -5em;
+    position: absolute;
+    left: -1em;
+}
 
-.luigiLucha .avatar {}
+#player1.yoshiLucha .avatar {
+    position: absolute;
+    top: -6em;
+    left: 0em;
+    width: 16em;
+}
+
+#player1.luigiLucha .avatar {}
+
+#player2.luigiLucha .avatar {
+    top: -3.5em;
+    position: absolute;
+}
+
+#player1.peachLucha .avatar {
+    left: -2em;
+    position: absolute;
+}
+
+#player2.peachLucha .avatar {
+    position: absolute;
+    top: -5em;
+}
 
 
 /*EXPLOSION*/
