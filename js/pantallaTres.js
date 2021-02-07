@@ -119,11 +119,11 @@ let showBomb = (playerId) => {
     bomb.style.position = "relative";
 
     //Mover el top y left de la bombita
-    // bomb.style.top = Math.floor(Math.random() * 10) + "px";
-    // bomb.style.left = Math.floor(Math.random() * 10) + "px";
+    bomb.style.top = Math.floor(Math.random() * 10) + "px";
+    bomb.style.left = Math.floor(Math.random() * 10) + "px";
 
     resolveIn(500).then(delay => {
-        // bomb.remove();
+        bomb.remove();
     });
 
     //Agrego bomb en bombContainer
@@ -159,7 +159,7 @@ let attack = (player) => {
     progress.style.width = lifePerc + "%";
 
     //Mostrar bomba
-    showBomb();
+    showBomb(playerId);
 
     //Si se murio enemigo, finaliza partida
     if (target.vida == 0) {

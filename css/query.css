@@ -1,13 +1,16 @@
 /*RESPONSIVE*/
 
-@media screen and (min-width: 1285px) {
+@media screen and (min-width: 1415px) {
     .body {
         /* margin-top: 10em; */
         background: radial-gradient(circle, rgba(76, 171, 255, 1) 57%, rgba(184, 218, 248, 0.6362920168067228) 100%);
     }
+    #pantallaTres {
+        left: 63em;
+    }
 }
 
-@media screen and (min-width:200px) and (max-width:1284px) {
+@media screen and (min-width:200px) and (max-width:1414px) {
     .body {
         position: relative;
     }
@@ -35,5 +38,8 @@
         font-size: 1.1em;
         left: 17em;
         width: 16em;
+    }
+    #pantallaTres {
+        left: 39em;
     }
 }

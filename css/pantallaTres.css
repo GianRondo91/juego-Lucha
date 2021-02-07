@@ -1,32 +1,25 @@
 /*PANTALLA-TRES*/
 
 #pantallaTres {
-    width: 31em;
+    width: 11em;
     height: 11em;
-    margin-left: 39em;
-    margin-right: 0;
-    position: relative;
-    top: 9em;
+    position: absolute;
+    top: 7em;
+    left: 38em;
 }
 
 .vs {
     text-align: center;
     font-size: 3em;
     color: red;
-    margin: 1em;
+    position: absolute;
+    top: 2em;
+    width: 3em;
+    left: 5em;
 }
 
-
-/* .title-playerDos {}
-
-.playerUno {}
-
-.playerDos {} */
-
 .player {
-    width: 33em;
     height: 13em;
-    /* background: red; */
 }
 
 .players {
@@ -36,7 +29,7 @@
 
 #progreso {
     display: flex;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
 }
 
 .progress {
@@ -50,19 +43,50 @@
 
 /*Avatares*/
 
-.yoshiLucha {
-    width: 6.5em;
+.players {
+    position: relative;
+    display: flex;
+    /* width: 39em; */
+    height: 21em;
+    /* background: red; */
+    left: -3em;
 }
 
-.peachLucha {
-    width: 4.5em;
+#player1 {
+    left: 1em;
+    top: -2em;
+    position: absolute;
 }
 
-.marioLucha {
-    width: 5.5em;
+#player2 {
+    position: absolute;
+    left: 25em;
 }
 
-.luigiLucha {}
+.player .avatar {
+    width: 13em;
+}
+
+.yoshiLucha .avatar {
+    width: 16em;
+}
+
+.peachLucha .avatar {
+    width: 18em;
+    left: -3em;
+    position: absolute;
+}
+
+#player1.marioLucha .avatar {
+    top: 2em;
+    position: absolute;
+}
+
+#player2.marioLucha .avatar {}
+
+.marioLucha .avatar {}
+
+.luigiLucha .avatar {}
 
 
 /*EXPLOSION*/
@@ -72,18 +96,14 @@
     position: absolute;
 }
 
-.explosion-player {
-    /*  */
-}
-
 .explosion-player1 {
-    margin-top: -14em;
+    margin-top: -21em;
     margin-left: -5em;
 }
 
 .explosion-player2 {
-    margin-top: -14em;
-    margin-left: 17.5em;
+    margin-top: -13em;
+    margin-left: 20.5em;
 }
 
 
@@ -92,8 +112,21 @@
 #start {
     width: 10em;
     position: absolute;
-    margin-top: 2em;
-    margin-left: 17em;
+    top: 30em;
+    left: 18em;
+}
+
+#startMessage {
+    display: block;
+    width: 5em;
+    left: 1.8em;
+    position: absolute;
+    top: 3.5em;
+    font-size: 4em;
+    background: red;
+    color: white;
+    z-index: 1;
+    text-align: center;
 }
 
 

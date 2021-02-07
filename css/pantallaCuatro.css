@@ -3,14 +3,10 @@
 }
 
 #players-final {
-    width: 50em;
-    height: 20em;
+    width: 17em;
     position: absolute;
     display: flex;
-    margin-left: 18em;
-    margin-right: auto;
-    justify-content: center;
-    margin-top: 7em;
+    left: 40em;
 }
 
 .players-final {
@@ -19,31 +15,72 @@
     margin: 4em;
 }
 
-.player-perdedor {
-    background: chartreuse;
+#winnerElement {
+    position: absolute;
+    left: -5em;
 }
 
-.player-ganador {
-    background: chocolate;
+#looserElement {
+    position: absolute;
+    left: 21em;
 }
 
 #volver {
     width: 8em;
-    margin-left: 57em;
-    margin-top: 29em;
+    top: 28em;
+    left: 57em;
     position: absolute;
 }
 
 .star {
     width: 46em;
     position: absolute;
-    top: 8em;
+    top: 11em;
     left: 24em;
 }
 
 .star-player {
-    width: 10em;
-    transform: rotate( 20deg);
-    padding: 2em;
-    margin-right: 12em;
+    width: 6em;
+    transform: rotate(20deg);
+    position: absolute;
+    left: 19em;
+    top: 0em;
 }
+
+
+/*WINNER-LOOSER*/
+
+.winnerElement,
+.looserElement {}
+
+.marioLooser img,
+.marioWinner img {
+    widows: 12em;
+}
+
+#looserElement.luigiLooser img {
+    position: absolute;
+    top: 4em;
+}
+
+.luigiLooser img,
+.luigiWinner img {
+    width: 17em;
+}
+
+.peachLooser img,
+.peachWinner img {
+    width: 13em;
+    position: absolute;
+    top: 1em;
+}
+
+.yoshiWinner img {
+    width: 14em;
+    left: 2em;
+    top: -1em;
+    position: absolute;
+}
+
+.yoshiLooser img,
+.yoshiWinner img {}
