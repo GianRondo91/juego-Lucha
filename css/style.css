@@ -15,6 +15,6 @@
 
 .logo {
     width: 12em;
-    position: fixed;
+    /* position: fixed; */
     margin: 2em;
 }

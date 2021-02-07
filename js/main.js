@@ -45,7 +45,6 @@ let yoshi = new Personaje('yoshi', 400, 38, 18, 4);
 /*JUGADORES*/
 let player1 = null;
 let player2 = null;
-let jugadores = [];
 
 /*PANTALLAS */
 
@@ -66,4 +65,4 @@ let cambiarPantalla = (pantalla) => {
     pantallaActual = pantalla;
 };
 
-cambiarPantalla(1);
+cambiarPantalla(0);

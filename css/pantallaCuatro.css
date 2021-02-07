@@ -30,7 +30,7 @@
 #volver {
     width: 8em;
     margin-left: 57em;
-    margin-top: 35em;
+    margin-top: 29em;
     position: absolute;
 }
 
@@ -41,13 +41,9 @@
     left: 24em;
 }
 
-.star-playerUno,
-.star-playerDos {
+.star-player {
     width: 10em;
     transform: rotate( 20deg);
     padding: 2em;
-}
-
-.star-playerUno {
     margin-right: 12em;
 }

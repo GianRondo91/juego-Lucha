@@ -40,9 +40,73 @@ let iniciarBatalla = () => {
     updateStateMessage();
 };
 
-let finishBattle = (winner, loser) => {
+//Divs vacios donde ira el ganador y perdedor
+
+//Funcion para elegir el personaje que aparecera en la pantalla 4
+let showWinnerImage = (winner) => {
+    let winnerElement = document.getElementById("winnerElement");
+    switch (winner) {
+        case mario:
+            winnerElement.firstElementChild.src = "img/marioWins.png";
+            winnerElement.className = "marioWinner";
+            break;
+        case luigi:
+            winnerElement.firstElementChild.src = "img/luigiWins.gif";
+            winnerElement.className = "luigiWinner";
+            break;
+        case peach:
+            winnerElement.firstElementChild.src = "img/peachWins.gif";
+            winnerElement.className = "peachWinner";
+            break;
+        case yoshi:
+            winnerElement.firstElementChild.src = "img/yoshiWins.gif";
+            winnerElement.className = "yoshiWinner";
+            break;
+        default:
+            break;
+    };
+};
+
+let showLooserImage = (looser) => {
+    let looserElement = document.getElementById("looserElement");
+    switch (looser) {
+        case mario:
+            looserElement.firstElementChild.src = "img/marioLooser.png";
+            looserElement.className = "marioLooser";
+            break;
+        case luigi:
+            looserElement.firstElementChild.src = "img/luigiLooser.png";
+            looserElement.className = "luigiLooser";
+            break;
+        case peach:
+            looserElement.firstElementChild.src = "img/peachLooser.png";
+            looserElement.className = "peachLooser";
+            break;
+        case yoshi:
+            looserElement.firstElementChild.src = "img/yoshiAtaque.png";
+            looserElement.className = "yoshiLooser";
+            break;
+        default:
+            break;
+    };
+};
+
+
+let finishBattle = (winner) => {
     battleState = 3;
     //Muesto en pantalla 4 los resultados
+
+    if (player1 == winner) {
+        showWinnerImage(player1);
+        showLooserImage(player2);
+    } else {
+        showLooserImage(player1);
+        showWinnerImage(player2);
+    };
+
+
+    //
+    cambiarPantalla(3);
 }
 
 let showBomb = (playerId) => {
@@ -55,11 +119,11 @@ let showBomb = (playerId) => {
     bomb.style.position = "relative";
 
     //Mover el top y left de la bombita
-    bomb.style.top = Math.floor(Math.random() * 10) + "px";
-    bomb.style.left = Math.floor(Math.random() * 10) + "px";
+    // bomb.style.top = Math.floor(Math.random() * 10) + "px";
+    // bomb.style.left = Math.floor(Math.random() * 10) + "px";
 
     resolveIn(500).then(delay => {
-        bomb.remove();
+        // bomb.remove();
     });
 
     //Agrego bomb en bombContainer
@@ -69,9 +133,7 @@ let showBomb = (playerId) => {
 }
 
 let attack = (player) => {
-    /*
-    Pegar al enemigo
-    */
+    /*Pegar al enemigo*/
     //Saber quien es mi enemigo e identificar los id de los player
     let target = player1;
     let playerId = "player2";

@@ -55,7 +55,6 @@ let seleccion = (personaje) => {
         opcion = "uno";
         //Dibujo la imagen seleccionada en el div de la pantalla 3
         selectPlayer(player1, player1Element);
-
     };
 
     //Introducimos personaje en PLAYER  
@@ -71,19 +70,19 @@ let selectPlayer = (player, element) => {
     switch (player) {
         case mario:
             element.firstElementChild.src = "img/marioAtaque.png";
-            element.className += " marioLucha";
+            element.className = "player marioLucha";
             break;
         case luigi:
             element.firstElementChild.src = "img/luigiAtaque.png";
-            element.className += " luigiLucha";
+            element.className = "player luigiLucha";
             break;
         case peach:
             element.firstElementChild.src = "img/peachAtaque.png";
-            element.className += " peachLucha";
+            element.className = "player peachLucha";
             break;
         case yoshi:
             element.firstElementChild.src = "img/yoshiAtaque.png";
-            element.className += " yoshiLucha";
+            element.className = "player yoshiLucha";
             break;
         default:
             break;
@@ -92,8 +91,6 @@ let selectPlayer = (player, element) => {
     let progress = document.getElementById('progress-' + element.id);
     progress.style.width = "100%";
 
-    //Reinicio vida
-    player.resetLife();
 }
 
 /*PANTALLA */

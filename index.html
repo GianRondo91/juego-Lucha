@@ -81,11 +81,11 @@
                 </div>
             </div>
             <div class="players">
-                <div id="player1" class="player playerUno">
+                <div id="player1" class="player">
                     <img src="" alt="" class="avatar">
                 </div>
                 <p class="vs">VS</p>
-                <div id="player2" class="player playerDos">
+                <div id="player2" class="player">
                     <img src="" alt="" class="avatarLucha">
                 </div>
             </div>
@@ -99,8 +99,12 @@
         <!--PANTALLA CUATRO GANADOR / VOLVER A INICIAR-->
         <div id="pantallaCuatro" style="display: none;">
             <div id="players-final">
-                <div class="players-final player-perdedor"></div>
-                <div class="players-final player-ganador"></div>
+                <div id="winnerElement" class="players-final player-perdedor">
+                    <img src="" alt="">
+                </div>
+                <div id="looserElement" class="players-final player-ganador">
+                    <img src="" alt="">
+                </div>
             </div>
 
             <div id="volver">
@@ -108,8 +112,7 @@
             </div>
 
             <div class="star">
-                <img src="img/star.png" alt="" class="star-player star-playerUno">
-                <img src="img/star.png" alt="" class="star-player star-playerDos">
+                <img src="img/star.png" alt="" class="star-player">
             </div>
         </div>
     </div>

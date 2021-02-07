@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 1285px) {
     .body {
-        margin-top: 10em;
+        /* margin-top: 10em; */
         background: radial-gradient(circle, rgba(76, 171, 255, 1) 57%, rgba(184, 218, 248, 0.6362920168067228) 100%);
     }
 }
